@@ -1,0 +1,14 @@
+<section>
+    <!-- Angular Slick Carousel component with configurations -->
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <!-- Loop through slides using *ngFor -->
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <!-- Set background image dynamically -->
+        <div
+          [style.background-image]="'url(' + slide.img + ')'"
+          style="width: 100%; display: flex; align-items: center; justify-content: center; height: 100vh; background-size: 100% 100%">
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </section>
+  
